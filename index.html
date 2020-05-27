@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Typing Game</title>
+  </head>
+  <body>
+    <button id="settings-btn" class="settings-btn">
+      <i class="fas fa-cog"></i>
+    </button>
+    <heading id="settings" class="settings">
+      <form id="settings-form">
+        <section>
+          <label for="difficulty">Difficulty</label>
+          <select id="difficulty">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+          </select>
+        </section>
+      </form>
+    </heading>
+    <section class="container">
+      <h2>👩‍💻 Speed Typer 👨‍💻</h2>
+      <small>Type the following:</small>
+      <h1 id="word"></h1>
+      <input type="text" id="text" autocomplete="off" placeholder="Type the words here">
+      <p class="time-container">
+        Time left: <span id="time">10s</span>
+      </p>
+      <p class="score-container">
+        Score: <span id="score">0</span>
+      </p>
+      <section class="end-game-container" id="end-game-container"></section>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
